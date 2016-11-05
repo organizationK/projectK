@@ -29,7 +29,20 @@ var app = {
     onDeviceReady: function() {
         //this.receivedEvent('deviceready');
 		Navigation.createNavigation();
+		
+		this.updateTexts();
     },
+	
+	// Update i18 texts on the app
+	updateTexts: function() {
+		
+		var title = jQuery.i18n.prop("LBL_PROJECT_K");
+		
+		$("#pageTitle").html(title);
+		
+		/*
+		console.debug("============ 1: " + jQuery.i18n.prop("MSG_TXT_1", "Hola mundo!!")); *()
+	},
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {

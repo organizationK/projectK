@@ -7,9 +7,9 @@ Portfolio = (function () {
 
 	/** PRIVATE -> Represents the full JSON object used for the system navigation */
 	portfolioJson = {
-		"a": { id: "a", name: "Acceso", pages: {
-				"1": { id: "1", name: "Roles", mvc: "roles" },
-				"2": { id: "2", name: "Usuarios", mvc: "usuarios" }
+		"a": { id: "a", name: jQuery.i18n.prop("LBL_ACCESS"), pages: {
+				"1": { id: "1", name: jQuery.i18n.prop("LBL_ROLES"), mvc: "roles" },
+				"2": { id: "2", name: jQuery.i18n.prop("LBL_USERS"), mvc: "usuarios" }
 			}	
 		},
 		"b": { id: "b", name: "Extra 1", pages: {

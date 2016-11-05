@@ -10,7 +10,14 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         //this.receivedEvent('deviceready');
+		
+		this.updateTexts();
     },
+	
+	updateTexts: function () {
+		
+		$("#usersButton").html(jQuery.i18n.prop("LBL_USERS"));
+	},
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {

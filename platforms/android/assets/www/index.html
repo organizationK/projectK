@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
     <head>
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
@@ -9,20 +9,23 @@
 		
 		<!-- Including jQuery and jQuery Mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="text/javascript" src="js/index.js"></script>
 		
 		<link rel="stylesheet" href="css/jquery.themes/blue.min.css" />
 		<link rel="stylesheet" href="css/jquery.themes/jquery.mobile.icons.min.css" />
-		
 		<link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css">
-		<script src="lib/jquery-1.11.3/jquery-1.11.3.js"></script>
-		<script src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
-		
 		<link rel="stylesheet" href="css/sidebar.css">
 		
-		<script src="js/portfolio.js"></script>
-		<script src="js/navigation.js"></script>
-        <title>PROJECTK</title>
+		<script type="text/javascript" src="lib/jquery-1.11.3/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="js/jquery.i18n.properties.min.js"></script>
+		
+		<script type="text/javascript" src="js/i18n.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		
+		<script type="text/javascript" src="js/portfolio.js"></script>
+		<script type="text/javascript" src="js/navigation.js"></script>
+		
+        <title>PROJECT K</title>
     </head>
     <body>
 		<div data-role="page" id="mainPage">
@@ -39,10 +42,10 @@
 						<a href="#" data-role="button" data-icon="delete" data-rel="close" data-iconpos="notext" data-inline="true" class="ui-link ui-btn ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" role="button"></a>
 				</diV>
 				</div>
-			</div>
+			</div><!-- /sidebar -->
 
 			<div data-role="header" id="header">
-				<h1>PROJECT K</h1> 
+				<h1 id="pageTitle"></h1> 
 				<a href="#sidebarMenu" data-role="button" data-icon="bars" data-iconpos="notext" data-inline="true" class="ui-link ui-btn ui-btn-b ui-icon-bars ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" role="button"></a>
 			</div><!-- /header -->
 
@@ -52,17 +55,6 @@
 
 
 		</div><!-- /page -->
-
-		<!--a href="index.html" data-role="button" data-icon="delete" style="width:150px !important;">ProjectK 1</a>
-		<a href="index.html" data-role="button" data-icon="delete">ProjectK 2</a>
-		<a href="index.html" data-role="button" data-icon="delete">ProjectK 3</a>
-        <div class="app">
-            <h1>PROJECTK</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to projectK</p>
-                <p class="event received">Hello ProjectK</p>
-            </div>
-        </div -->
         <script type="text/javascript" src="cordova.js"></script>
         
     </body>
