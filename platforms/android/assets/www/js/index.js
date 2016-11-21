@@ -28,9 +28,24 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         //this.receivedEvent('deviceready');
-		Navigation.createNavigation();
+		
+		//$("#mainFrame").attr("src", "login.html");
+		var isValidSession;
 		
 		this.updateTexts();
+		
+		// validating session
+		isValidSession = Session.isValidSession();
+		
+		if (isValidSession === true) {
+			Navigation.createNavigation();
+		} else {
+			// loading login page
+			$("#mainFrame").attr("src", "pages/template/login.html");
+			$("#sidebarMenu").addClass("hidden");
+		}
+		
+		
     },
 	
 	// Update i18 texts on the app
@@ -40,8 +55,7 @@ var app = {
 		
 		$("#pageTitle").html(title);
 		
-		/*
-		console.debug("============ 1: " + jQuery.i18n.prop("MSG_TXT_1", "Hola mundo!!")); *()
+		/* console.debug("============ 1: " + jQuery.i18n.prop("MSG_TXT_1", "Hola mundo!!")); *() */
 	},
 
     // Update DOM on a Received Event

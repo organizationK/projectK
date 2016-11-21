@@ -9,14 +9,14 @@
 
 #mainPage #sidebarMenu {
 	min-width: 250px;
-	max-width: 350px;
+	max-width: 310px;
 	width: 50%;
 	background-color: #f1f1f1;
 }
 
 #mainPage #sidebarMenu #topSection {
 	width: 100%;
-	height: 140px;
+	height: 135px;
 	border-bottom: 1px solid #456f9a;
 	margin-bottom: -8px;
 	background-color: #396b9e;
